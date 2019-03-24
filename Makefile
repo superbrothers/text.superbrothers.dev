@@ -7,6 +7,7 @@ HUGO ?= $(DOCKER_RUN) -p 8080:8080 $(HUGO_IMAGE) hugo
 build:
 		$(HUGO)
 
+.PHONY: build-dev
 build-dev:
 		$(HUGO) -D
 

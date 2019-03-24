@@ -30,6 +30,7 @@ HUGO ?= $(DOCKER_RUN) -p 8080:8080 $(HUGO_IMAGE) hugo
 build:
                 $(HUGO)
 
+.PHONY: build-dev
 build-dev:
                 $(HUGO) -D
 
@@ -44,9 +45,9 @@ serve-dev:
 .PHONY: new-post
 new-post:
                 @yymmdd="$$(date +%y%m%d)"; \
-                echo -n "content/posts/$${yymmdd}-POST.md: "; \
+                echo -n "content/$${yymmdd}-POST.md: "; \
                 read post; \
-                $(HUGO) new "content/posts/$${yymmdd}-$${post}.md"
+                $(HUGO) new "content/$${yymmdd}-$${post}.md"
 
 .PHONY: run-in-hugo
 run-in-hugo:
