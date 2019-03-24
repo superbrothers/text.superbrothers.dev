@@ -64,6 +64,8 @@ run-in-hugo:
 
 Hugo テーマとして利用者がカスタマイズする余地があるように作られているのが一般的なのかなと思っていますが、このテーマはその余地がないようだったので、[Partial Templates \| Hugo](https://gohugo.io/templates/partials/#example-header-html) を参考に[パッチ](https://github.com/superbrothers/text.superbrothers.dev/commit/cc4721cdee04bdbe858a5f8e61e31111f4e1308c)を当てています。この辺りは、Hugo として統一されたルールがあると迷わずに済むと思うんですが、存在しないんでしょうか。マージされるかわからないですが、このパッチはあとで PR として送ってみることにします。
 
+追記(19/3/24): Hugo paper テーマへの PR がすぐにマージしてもらえたので、カスタマイズできるようになりました。 https://github.com/nanxiaobei/hugo-paper/pull/22
+
 カスタマイズした内容は、日本語フォントの指定とコードブロックのフォントに [Hack](https://sourcefoundry.org/hack/) の利用、ページタイトルへの `#` の追加になりました。
 
 ## netlify
@@ -77,7 +79,6 @@ Hugo テーマとして利用者がカスタマイズする余地があるよう
 netlify のビルド環境では、Docker が利用できないようです。今回 `hugo` コマンドはコンテナ内で利用するようにしていたため、このままではうまくいきません。`Makefile` で `hugo` コマンドを上書きできるようにして、netlify のビルド環境では環境にインストールされた `hugo` コマンドを利用するようにすれば大丈夫です。
 
 ```toml
-
 [build]
 publish = "public"
 command = "make build"
