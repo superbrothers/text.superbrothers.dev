@@ -1,7 +1,7 @@
 DOCKER_RUN := docker run --rm --init -v $(shell pwd):/src -w /src -u $(shell id -u):$(shell id -g)
 HUGO_VERSION := 0.53
 HUGO_IMAGE := jojomi/hugo:$(HUGO_VERSION)
-HUGO := $(DOCKER_RUN) -p 8080:8080 $(HUGO_IMAGE) hugo
+HUGO ?= $(DOCKER_RUN) -p 8080:8080 $(HUGO_IMAGE) hugo
 
 .PHONY: build
 build:
