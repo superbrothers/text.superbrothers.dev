@@ -24,7 +24,7 @@ new-post:
 		@yymmdd="$$(date +%y%m%d)"; \
 		echo -n "content/$${yymmdd}-POST.md: "; \
 		read post; \
-		$(HUGO) new "content/$${yymmdd}-$${post}.md"
+		$(HUGO) new "$${yymmdd}-$${post}.md"
 
 .PHONY: run-in-hugo
 run-in-hugo:
