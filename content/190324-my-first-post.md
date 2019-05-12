@@ -2,6 +2,7 @@
 title: "My First Post"
 date: 2019-03-24T00:22:11Z
 draft: false
+tags: ["hugo", "hugo teheme", "netlify"]
 ---
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">昨日飲んでめっちゃよかったので😊 / いぬいっぴき <a href="https://t.co/PniMULOKcg">pic.twitter.com/PniMULOKcg</a></p>&mdash; Kazuki Suda / すぱぶら (@superbrothers) <a href="https://twitter.com/superbrothers/status/1107963277684817924?ref_src=twsrc%5Etfw">March 19, 2019</a></blockquote>
