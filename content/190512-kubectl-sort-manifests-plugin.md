@@ -31,22 +31,35 @@ $ kubectl apply -f manifests/
 
 `kubectl sort-manifests` は、適用されるべき順序にマニフェストをソートしてくれるプラグインが、マルチドキュメントのマニフェストファイルであっても、そのなかのオブジェクトも含めソートするようになっています。
 
-使い方は簡単で、引数にマニフェストファイルまたはディレクトリを1つまたは複数指定するだけです。実行すると結果として標準出力にソートしたマニフェストを出力します。
+使い方は簡単で、kubectl と同様に `--filename` (`-f`) オプションでマニフェストファイルまたはディレクトリを1つまたは複数指定するだけです。実行すると結果として標準出力にソートしたマニフェストを出力します。
+
+*v0.2.0 で kubectl の UX に合わせるべく、引数によるマニフェストファイルまたはディレクトリの指定を廃止し、`--filename` (`-f`) オプションによる指定に変更しました。*
 
 ```
-kubectl sort-manifests manifests/
+kubectl sort-manifests -f manifests/
+# Source: manifests/configmap.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: configmap
+data:
+  (略)
+---
+# Source: testdata/rbac.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+(略)
 ```
 
 次のようにファイルとディレクトリを同時に指定もできます。
 
 ```
-kubectl sort-manifests manifests/ namespace.yaml deployment.yaml
+kubectl sort-manifests -f manifests/ -f namespace.yaml -f deployment.yaml
 ```
 
 ソートした結果を適用する場合は、次のようにします。
 
 ```
-kubectl sort-manifests manifests/ | kubectl apply -f-
+kubectl sort-manifests -f manifests/ | kubectl apply -f-
 ```
 
 ### インストール方法
