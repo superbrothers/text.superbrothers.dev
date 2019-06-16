@@ -4,4 +4,4 @@ command = "make build"
 
 [build.environment]
 HUGO = "hugo"
-HUGO_VERSION = "0.53"
+HUGO_VERSION = "0.55.6"
