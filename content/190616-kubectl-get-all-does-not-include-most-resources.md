@@ -25,11 +25,11 @@ draft: false
 
 ## はじめに
 
-`kubectl get all` は、その見た目からあたかも利用できる全リソースの情報を出力するように見えますが、DaemonSet も Ingress も含まれていません。真に全リソースの情報を出力するには、簡単なワンライナが利用できます。また、それを kubectl プラグインとして使えるようにしておくと便利です。
+`kubectl get all` は、その見た目からあたかも利用できる全リソースの情報を出力するように見えますが、Ingress、Role/RoleBinding といったリソースが含まれておらず、全リソースが対象ではありません。真に全リソースの情報を出力するには、簡単なワンライナが利用できます。また、それを kubectl プラグインとして使えるようにしておくと便利です。
 
 ## `kubectl get all` はどのリソース情報を表示するのか
 
-Kubernetes v1.14.3 時点で、`kubectl get all` は次のリソースが対象となっています。
+`kubectl get all` は Kubernetes v1.14.3 時点で次のリソースが対象となっており、全リソースが対象ではありません。
 
 - pods.v1
 - replicationcontrollers.v1
@@ -41,8 +41,6 @@ Kubernetes v1.14.3 時点で、`kubectl get all` は次のリソースが対象�
 - jobs.batch
 - replicasets.apps
 - statefulsets.apps
-
-見て分かるとおり、DaemonSet も Ingress も含まれていません。
 
 ## それでも kubectl get all を使いたい
 
