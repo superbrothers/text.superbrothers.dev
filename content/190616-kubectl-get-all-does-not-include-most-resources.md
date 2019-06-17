@@ -2,6 +2,8 @@
 title: "kubectl get all は全リソースの情報を表示しない"
 date: 2019-06-16T04:41:03Z
 draft: false
+tags: ["kubernetes", "kubectl"]
+
 ---
 
 ## TL;DR
