@@ -7,3 +7,6 @@ pygmentsCodefences = true
 hasCJKLanguage = true
 # The length of text in words to show in a `.Summary`.
 SummaryLength = 200
+
+[params]
+  images = ["images/avatar_400x400.png"]
