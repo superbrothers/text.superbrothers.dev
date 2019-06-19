@@ -117,3 +117,5 @@ kubectl プラグインについての詳細は、[kubectl のプラグイン機
 ここでは、`kubectl get all` は全リソースの情報を出力しないことと、真に全リソースの情報を出力するワンライナを紹介しました。ワンライナを kubectl プラグインとして利用できるようにしておくと何かと便利です。
 
 次のエントリでは、`kubectl get all` で出力されるリソースはどこで指定されているのか、その仕組みについて解説します。
+
+- [kubectl get all で対象となるリソースのリストはどこからやってくるのか](/190619-where-does-the-list-of-resources-targeted-by-kubectl-get-all-come-from)
