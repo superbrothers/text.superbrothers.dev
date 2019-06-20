@@ -1,5 +1,5 @@
 ---
-title: "kubectl get all で対象となるリソースのリストはどこからやってくるのか"
+title: "kubectl get all で対象となるリソースリストはどこからやってくるのか"
 date: 2019-06-19T13:37:06Z
 tags: ["kubernetes", "kubectl"]
 draft: false
