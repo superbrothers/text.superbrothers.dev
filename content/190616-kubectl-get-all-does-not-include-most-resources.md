@@ -49,7 +49,7 @@ tags: ["kubernetes", "kubectl"]
 ばっと大雑把にどんなリソースのオブジェクトが存在するのかを確認するのに `kubectl get all` はたしかに便利です。そこで、真に全リソースの情報を出力するには、次のワンライナが利用できます。
 
 ```sh
-kubectl get "$(kubectl api-resources --namespaced=true --verbs=list -output=name | tr "\n" "," | sed -e 's/,$//')"
+kubectl get "$(kubectl api-resources --namespaced=true --verbs=list --output=name | tr "\n" "," | sed -e 's/,$//')"
 ```
 
 ここからはワンライナが何をやっているのかを説明します。気になる人だけ読んでください。
@@ -71,7 +71,7 @@ persistentvolumeclaims
 `kubectl api-resources` コマンドは、接続する Kubernetes API サーバで利用できるリソースを一覧するコマンドです。ここではそのオプションである `--namespaced=true` を利用して、namespaced なリソースに絞り込んでいます。Kubernetes リソースには、namespaced とそうでないもの（cluster wide/クラスタレベル) なリソースがあり、namespaced なリソースは、Pods, Deployments などで、クラスタレベルのリソースは、Namespaces や PersistentVolumes などです。次の `--verbs=list` オプションで、リソースのリスト取得に対応しているリソースに絞り込んでいます。最後に出力する情報をリソース名だけにしています。
 
 ```
-$ kubectl api-resources --namespaced=true --verbs=list -output=name | tr "\n" "," | sed -e 's/,$//'
+$ kubectl api-resources --namespaced=true --verbs=list --output=name | tr "\n" "," | sed -e 's/,$//'
 configmaps,endpoints,events,limitranges,persistentvolumeclaims,(略...)
 ```
 
