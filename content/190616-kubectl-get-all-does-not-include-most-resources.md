@@ -90,12 +90,12 @@ kubectl get configmaps,endpoints,events,limitranges,persistentvolumeclaims,(略.
 次のステップでコマンドをインストールします。ここでは、`/usr/local/bin/` にインストールしていますが、パスが通っているディレクトリであればどこでも大丈夫です。必要に応じて変更してください。
 
 ```
-cat <<EOL > /usr/local/bin/kubectl-get_all
+cat <<'EOL' > /usr/local/bin/kubectl-get_all
 #!/usr/bin/env bash
 
 set -e -o pipefail; [[ -n "$DEBUG" ]] && set -x
 
-exec kubectl get "$(kubectl api-resources --namespaced=true --verbs=list -output=name | tr "\n" "," | sed -e 's/,$//')" "$@"
+exec kubectl get "$(kubectl api-resources --namespaced=true --verbs=list --output=name | tr "\n" "," | sed -e 's/,$//')" "$@"
 EOL
 chmod +x /usr/local/bin/kubectl-get_all
 ```
