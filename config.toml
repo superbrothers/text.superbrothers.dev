@@ -1,6 +1,6 @@
 baseURL = "https://text.superbrothers.dev/"
 languageCode = "ja-jp"
-title = "text.superbrothers.dev"
+title = "text․superbrothers․dev"
 theme = "paper"
 pygmentsCodefences = true
 # This will make .Summary and .WordCount behave correctly for CJK languages.
