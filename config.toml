@@ -1,7 +1,6 @@
-baseURL = "https://text.superbrothers.dev/"
+baseURL = "https://text.superbrothers.dev"
 languageCode = "ja-jp"
 title = "text․superbrothers․dev"
-theme = "paper"
 pygmentsCodefences = true
 # This will make .Summary and .WordCount behave correctly for CJK languages.
 hasCJKLanguage = true
@@ -10,3 +9,8 @@ SummaryLength = 200
 
 [params]
   images = ["images/avatar_400x400.png"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

@@ -1,0 +1,13 @@
+{{ define "main" }}
+
+<section id="main">
+  <header>
+    <h1 id="title">{{ .Title }}</h1>
+    <time datetime="{{ .Date.Local.Format "2006-01-02" }}">{{- .Date.Local.Format "Mon, 02 Jan 2006 15:04:05 -0700" -}}</time>
+  </header>
+  <article>
+    {{ .Content }}
+  </article>
+</section>
+
+{{ end }}
