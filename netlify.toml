@@ -1,7 +1,10 @@
 [build]
-publish = "public"
-command = "hugo -b $DEPLOY_URL"
+  publish = "public"
+  command = "hugo"
+
+[context.deploy-preview]
+  command = "hugo -b $DEPLOY_URL"
 
 [build.environment]
-HUGO_VERSION = "0.66.0"
-TZ = "Asia/Tokyo"
+  HUGO_VERSION = "0.66.0"
+  TZ = "Asia/Tokyo"
