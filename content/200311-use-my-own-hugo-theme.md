@@ -1,0 +1,20 @@
+---
+title: "ブログのテーマを自作のものに変えました"
+date: 2020-03-11T01:22:12Z
+---
+
+ブログを更新できないこと10ヶ月、だいたいこうなることは予想できていましたが、やっと更新することができました。長い道のりでした。
+
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">ブログを更新するべく、Hugo テーマを作りはじめた／(^o^)＼</p>&mdash; すぱぶら (Kazuki Suda) (@superbrothers) <a href="https://twitter.com/superbrothers/status/1237041738138537985?ref_src=twsrc%5Etfw">March 9, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+というわけで、なぜかブログを更新することが目的でテーマを自作しました。どうでしょうか。以前から Markdown 形式風のテーマにしたいと思っていましたが、以前のものからさらに寄せました。おそらく今後もちょこちょこ変わっていくと思うので、今の様子を残しておきます。
+
+![シングルページです。](https://lh3.googleusercontent.com/5zZz1fvsHbrhuMjdfe6_om5ZuYqjaWn6Yppd-zfAstsQv3EYMRxLeku8SrGsQwprWlJrtSkQejUYL_jR6or2HQ-pogfhqXPRYuq1bSZXxk8G-GZM_l7LWItL3563o5Ghy7Ao23Dtea1x4wDqXi-k0E5nO_KyvX0V-oLJkWbKlFTw1JzcFPkD-nw9zTlqnqDh-4jelyJM60Cp2p6QOjfINoSrwCLkrEuoxjUJpKWmtamnYafhgvMGi7DPNyzMN0oah3CzTkM0Ufp9UlSeiziAMZkfeWtEb-QAaVk9_tzfgnxHlSVjxyemrqfIa2ywGqodWUbvhp36WIfEUQ-PWM0vVP9FiAdAALW4BU9m6wYqNnWnCV621CQaltiV1CXeSXbEPrUtx8tQ1S3k2HzlXAUJq5FsCmJRc8WDHL6txNeUJkMe5C0VwmxxqUOWNAm6xGCsmmGfhr_kfGqqAX0q2sjCUW-pABRcjroIhHZ27l0cMSpafNsZmXPrFGxWfeIng2UL4S-GjTbyQ5fzym0Eg1Y66IdwEetAbUVgrCLYe23oIkgkQc9lY3NgumS4i3vvThhgISfv0_2NsAVxkytmuz9MRj2TPsomzVa3bJH8sX24hnIoN7cHzlUi6CtK6IBoWebb4jt1UNy7VD7datZxYAJl-vxctL_k5HIaJicNQ5_zhtGSX3MoPVbT5u0=w900)
+
+![リストページです。](https://lh3.googleusercontent.com/WyWZugDnEbiuM5_Jv3yQ7dd_hPyqwqYpym-jCKhtWmYFiaBZTjBsGfYudr4kXnzKhg3yea1LRCPRgSsAjnveGy86rA6IwVqzGP4v3Vg03T2VvKreHBbFZlAtFj_DI6nfr__gyaMrPxwH2OzFVw07oLniYHmXnbUC-w6AYcp0-BwEiLnH1MkJidDrjx22xq7qBozNcNfKm5M5wapFffRUl7-YB7FMHb45kfSiOy_tFwZs-MRLR-s3SEswWSc903MyLw-gBnD9djOrOYcwa2YacCMbzLKBAYLKSEUYYOa51e9IohgskY_--sMdONYXMgYyuxNYte2ZiUMw5NuU7aYEaV32gA1j1oJsHQ0HMhOX8Vk4h5WWnGAAYn346BkjEm24o0o-W4xb6y8FKN2pfrD2nKkTx7wPcAuFImA6jq6mWwp0oiwI-0wRu10oPIdL2yedm_72ojLkoXKfj0wcbMETBiIIm9QBSTykEQLmJq2HLCGppI0wXH6h1kE4FBo3URrEpR8hXcH_iU8UwNKpza7ITW_LfWeG7f5Q2pdQMycIM2fzejO0F-39Pc1hRAn0uOoipoWEjGhQYHDnHqEnswY-PcAi-Paq6dlk5W1FS12QBaiObofLVvg-zCEEy8rUhsqH2wFN6ejDCeuJCvxaGiUmQWYCSTVQZERPquxu-rj_0nHj2VBbERqliEo=w900)
+
+また、画像は Google Photos から直リンするようにしました。サイズの加工なりが不要になってべんりなのですが、直リンしていいんだろうか。
+
+---
+
+このブログでは1年に1回以上の更新を目指します :sunglasses:
