@@ -1,7 +1,7 @@
-DOCKER_RUN := docker run --rm --init -v $(shell pwd):/src -w /src -u $(shell id -u):$(shell id -g)
+DOCKER_RUN := docker run --rm --init -v $(shell pwd):/src -w /src
 HUGO_VERSION := 0.66.0
 HUGO_IMAGE := klakegg/hugo:$(HUGO_VERSION)
-HUGO ?= $(DOCKER_RUN) -p 8080:8080 $(HUGO_IMAGE)
+HUGO ?= $(DOCKER_RUN) -p 8080:8080 $(HUGO_IMAGE) $(HUGO_OPTS)
 
 .PHONY: build
 build:
