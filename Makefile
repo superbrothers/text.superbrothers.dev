@@ -1,7 +1,7 @@
 DOCKER_RUN := docker run --rm --init -v $(shell pwd):/src -w /src
 HUGO_VERSION := 0.66.0
 HUGO_IMAGE := klakegg/hugo:$(HUGO_VERSION)
-HUGO ?= $(DOCKER_RUN) -p 8080:8080 $(HUGO_IMAGE) $(HUGO_OPTS)
+HUGO ?= $(DOCKER_RUN) -e HUGO_ENV -p 8080:8080 $(HUGO_IMAGE) $(HUGO_OPTS)
 
 .PHONY: build
 build:
@@ -13,7 +13,7 @@ build-dev:
 
 .PHONY: serve
 serve:
-		$(HUGO) server --bind=0.0.0.0 -p 8080 --minify
+		HUGO_ENV=production $(HUGO) server --bind=0.0.0.0 -p 8080 --minify
 
 .PHONY: serve-dev
 serve-dev:
