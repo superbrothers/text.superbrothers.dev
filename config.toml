@@ -7,6 +7,8 @@ hasCJKLanguage = true
 # The length of text in words to show in a `.Summary`.
 SummaryLength = 200
 
+googleAnalytics = "UA-10011477-9"
+
 [params]
   images = ["images/avatar_400x400.png"]
 
