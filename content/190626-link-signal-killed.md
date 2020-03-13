@@ -37,7 +37,7 @@ Makefile:93: recipe for target 'all' failed
 
 Docker Desktop は、Docker Engine が使用できるリソース使用量をデフォルト 2GiB に制限しています。そのため、コンテナ内のビルドでマシン自体のリソースは余っているにも関わらずこのエラーに直面した場合は、リソース使用量の制限を緩和する必要があります。macOS の場合「Preferences... → Advanced タブ」から、リソース使用量の制限値を変更できます。Kubernetes をビルドする場合は少なくとも 8GiB 以上に設定します。
 
-![Docker Desktop で Docker Engine が利用できるリソース使用量を変更する](/images/190626-link-signal-killed/docker-desktop.png)
+![Docker Desktop で Docker Engine が利用できるリソース使用量を変更する](https://lh3.googleusercontent.com/8PzeWoLhu3pGz3V5y_e2_7chao04sj_2EaoCiLYDIIQku6LrwOtGXs9shiyMOqePWLYNKddQpVkaJmNlIkPUyZjm38r77hnYGLP2MtC_q4VNzig9N7Wml2kqfN9-lFuf9J8kFSu8fZM=w640)
 
 当然ながら Docker Desktop の使用以外の方法でコンテナを使用している場合、これは当てはまらないことに注意してください。
 

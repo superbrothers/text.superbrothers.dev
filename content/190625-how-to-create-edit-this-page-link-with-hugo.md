@@ -9,7 +9,7 @@ tags: ["hugo"]
 
 ブログで投稿した記事のちょっとした typo を修正するために GitHub リポジトリから該当記事のマークダウンファイルにたどり着くまでがとても面倒だったのと、あわよくば記事に問題を見つけた人がプルリクエスト（PR）してくれるかもしれないので、それを目的に「Edit this page（このページを編集する）」という記事のソースファイルにワンクリックでたどり着けるリンクを各記事の下部に用意しました。
 
-![Edit this page リンク](/images/190625-how-to-create-edit-this-page-link-with-hugo/edit-this-page.png)
+![Edit this page リンク](https://lh3.googleusercontent.com/ObVBWcVYfWuAo29KPPAaCEwmw1TlotlTm6nlOc8mp2gm6vl273vLJ5Ss1FiLBv3WALp1DFjAEKBkeHX6mx97aLvJBiuOTf22Ati5jM4Q-f-2dkITj_rznG8IcS05tQ0vUktHlKq6Tt8=w900)
 
 少し前だったかに Microsoft のドキュメントで PR が送れる仕組みがあってよいみたいなので、話題になっていたアレです。ここでは、それを Huge で実現する方法を解説します。これはブログなのでわざわざ間違いを PR してくれる人は少ないと思いますが、プロダクトのドキュメントなどでは有用だと思います。
 
