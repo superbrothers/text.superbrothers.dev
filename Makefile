@@ -5,7 +5,7 @@ HUGO ?= $(DOCKER_RUN) -p 8080:8080 $(HUGO_IMAGE) $(HUGO_OPTS)
 
 .PHONY: build
 build:
-		$(HUGO)
+		$(HUGO) --minify
 
 .PHONY: build-dev
 build-dev:
@@ -13,7 +13,7 @@ build-dev:
 
 .PHONY: serve
 serve:
-		$(HUGO) server --bind=0.0.0.0 -p 8080
+		$(HUGO) server --bind=0.0.0.0 -p 8080 --minify
 
 .PHONY: serve-dev
 serve-dev:
