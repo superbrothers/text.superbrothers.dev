@@ -21,10 +21,7 @@ serve-dev:
 
 .PHONY: new-post
 new-post:
-		@yymmdd="$$(date +%y%m%d)"; \
-		echo -n "content/$${yymmdd}-POST.md: "; \
-		read post; \
-		$(HUGO) new "$${yymmdd}-$${post}.md"
+		@HUGO="$(HOGO)" ./hack/new-post.sh
 
 .PHONY: run-in-hugo
 run-in-hugo:
