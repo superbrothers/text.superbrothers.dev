@@ -14,7 +14,7 @@ tags: ["kubernetes", "kind"]
 3. containerd を再起動する
     - `docker exec <node> systemctl restart containerd`
 
-正常に中間証明書がインストールされているかどうかは、ノード内でコンテナイメージを取得できるかどうかを確認するのが早いです。
+正常に中間証明書がインストールされているかどうかは、ノード内でコンテナイメージを取得できるかを確認するのが早いです。
 
 ```
 docker exec <node> crictl pull <container-image>
