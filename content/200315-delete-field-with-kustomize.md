@@ -7,6 +7,11 @@ tags: ["kubernetes", "kustomize"]
 
 対象のフィールドの値を `null` としてパッチすることでフィールドそのものを削除できます。
 
+```
+kustomize version
+{Version:3.5.4 GitCommit:3af514fa9f85430f0c1557c4a0291e62112ab026 BuildDate:2020-01-17T14:23:25+00:00 GoOs:darwin GoArch:amd64}
+```
+
 ---
 
 例えば次のような Pod マニフェストがあるとします。
