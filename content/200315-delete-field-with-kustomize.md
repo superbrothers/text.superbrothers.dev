@@ -30,22 +30,21 @@ spec:
   restartPolicy: Never
 ```
 
-このマニフェストの環境変数 `LOG_LEVEL` は ConfigMap から値を取得するように設定されていますが、これを直接 `INFO` に設定したい。つまり次のようなマニフェストとしたいとします。
+このマニフェストの環境変数 `LOG_LEVEL` は ConfigMap から値を取得するように設定されていますが、これを直接 `INFO` に設定したい。つまり次のように `env.value` フィールドを値を `INFO` として新たに追加し、既存の `env.valueFrom` フィールドを削除したいとします。
 
-```yaml
-apiVersion: v1
-kind: Pod
-metadata:
-  name: dapi-test-pod
-spec:
-  containers:
-  - name: test-container
-    image: k8s.gcr.io/busybox
-    command: [ "/bin/sh", "-c", "env" ]
-    env:
-    - name: LOG_LEVEL
-      value: INFO
-  restartPolicy: Never
+```diff
+--- a/pod.yaml
++++ b/pod.yaml
+@@ -9,8 +9,5 @@ spec:
+     command: [ "/bin/sh", "-c", "env" ]
+     env:
+     - name: LOG_LEVEL
+-      valueFrom:
+-        configMapKeyRef:
+-          name: env-config
+-          key: log_level
++      value: INFO
+   restartPolicy: Never
 ```
 
 ここで次のような `$patch :delete` を使用して `env.valueFrom` フィールドを削除しようとしますが、
@@ -64,8 +63,6 @@ patchesStrategicMerge:
   spec:
     containers:
     - name: test-container
-      image: k8s.gcr.io/busybox
-      command: [ "/bin/sh", "-c", "env" ]
       env:
       - name: LOG_LEVEL
         value: INFO
