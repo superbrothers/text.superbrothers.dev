@@ -12,6 +12,11 @@ googleAnalytics = "UA-10011477-9"
 [params]
   images = ["images/avatar_400x400.png"]
 
+[Taxonomies]
+  # Remove the "categories"
+  # https://discourse.gohugo.io/t/i-dont-want-tags-and-categories/12091/6
+  tag = "tags"
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
