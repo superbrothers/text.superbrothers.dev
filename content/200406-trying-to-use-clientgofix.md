@@ -25,13 +25,13 @@ Found:    go version go1.14 darwin/amd64
 make: *** [check_go_version] Error 1
 ```
 
-`clientgofix` は Go 1.14 を使用しているようです。Kubernetes 1.18.0 は Go 1.13 を使っているので面倒ですが、Go 1.14 を用意します。私は複数バージョンの管理に [asdf-vm](https://asdf-vm.com/) を使っています。べんりです。
+Go のバージョンチェックに失敗しています。どこかしらかの Homebrew の更新で Go 1.14 に更新されてしまっているかつバージョンが `1.14` となっており、バリデートに失敗しているようです。ここでは [asdf-vm](https://asdf-vm.com/) を使って Go 1.13.9 をインストールします。`asdf` べんりです。
 
 ```
-$ asdf install golang 1.14.1
-$ asdf global golang 1.14.1
+$ asdf install golang 1.13.9
+$ asdf global golang 1.13.9
 $ go version
-go version go1.14 darwin/amd64
+go version go1.13.9 darwin/amd64
 ```
 
 改めてインストールします。
