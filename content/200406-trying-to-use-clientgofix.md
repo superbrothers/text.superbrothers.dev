@@ -7,7 +7,7 @@ tags: ["kubernetes"]
 
 Kubernetes 1.18 で k8s.io/client-go でいくつかの変更が入りました。詳しくは次のとおりです。
 
-> 生成されたclientset、dynamic/metadata/scaleクライアントのメソッドは第一引数にcontext.Contextをとるようになりました。また、Create、Update、Patchメソッドはそれぞれ引数にCreateOptions、UpdateOptions、PatchOptionsをとります。Delete及びDeleteCollectionメソッドはDeleteOptionsを参照ではなく値として受け付けるようになりました。
+> 生成されたclientset、dynamic/metadata/scaleクライアントのメソッドは第一引数にcontext.Contextをとるようになりました。また、Create、Update、Patchメソッドはそれぞれ引数にCreateOptions、UpdateOptions、PatchOptionsをとります。Delete及びDeleteCollectionメソッドはDeleteOptionsを参照ではなく値として受け付けるようになりました。  
 > 以前のインタフェースで生成されたclientsetは、新しいAPIへの逐次的な移行を可能にするために、新しい「非推奨」パッケージで追加されました。非推奨パッケージは1.21のリリース時に削除されます。この移行をサポートするためのツールは http://sigs.k8s.io/clientgofix で提供されています
 
 - [Kubernetes 1\.18: SIG\-API Machineryの変更内容 \- Qiita](https://qiita.com/Ladicle/items/bbe2a62aba85d083283d)
