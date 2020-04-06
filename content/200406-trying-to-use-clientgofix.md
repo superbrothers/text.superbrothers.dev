@@ -1,5 +1,5 @@
 ---
-title: "Kubernetes 1.18: clientgofix を使って client-go の新しいインターフェイスに移行する"
+title: "Kubernetes 1.18: clientgofix を使って client-go の新しいインタフェイスに移行する"
 date: 2020-04-06T22:03:04+09:00
 draft: false
 tags: ["kubernetes"]
@@ -12,7 +12,7 @@ Kubernetes 1.18 で k8s.io/client-go でいくつかの変更が入りました�
 
 - [Kubernetes 1\.18: SIG\-API Machineryの変更内容 \- Qiita](https://qiita.com/Ladicle/items/bbe2a62aba85d083283d)
 
-上にあるとおり、新しいインターフェイスの API に移行するための `clientgofix` という便利ツールが用意されています。ここでは私が趣味で開発している `kubectl open-svc` プラグインで使ってみます。
+上にあるとおり、新しいインタフェイスの API に移行するための `clientgofix` という便利ツールが用意されています。ここでは私が趣味で開発している `kubectl open-svc` プラグインで使ってみます。
 
 最初に `clientgofix` の README にあるとおりの手順でインストールします。
 
