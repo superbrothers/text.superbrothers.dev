@@ -1,0 +1,33 @@
+---
+title: "Yeticaster"
+date: 2020-05-06T21:01:03+09:00
+draft: false
+images:
+- https://lh3.googleusercontent.com/jKiKzr7VhiFb2wRRkxtE1bes6rkQV7vmvvbA3jlVYhU1kumkGY0gq5arLTK0PMrCbzGudWGDTchy_aYHjL5V-wYoffZ1aHbWXIfe23kv1LU9vQLlyhhHSK7z6WOmrmZStvY-4fzaJ5Q=w1770-h1328-no
+---
+
+4月開催の Kubernetes Meetup Tokyo は完全なリモート配信となり、主催もスピーカもみなリモートからになって、これまで配信環境の品質というものを全く気にしていなかったのだけど、あとからミートアップの録画を見直したら自分の声がすっごい籠もっていた。マイクには16インチ Macbook Pro のビルトインを使っていて、これまで Zoom を使った会議でも飲み会でも音声の質については何も言われたことがなかったので、問題ないのかなと思っていたがさすがに数百人に聞いてもらう環境ではこれではまずいことを認識した。あとから人に音声どうかなと聞いみたらたしかに籠もっていると思っていたと言っていたので、Macbook のビルドインマイクを使っている人、籠もっているぞ。
+
+主な用途はリモート飲みで時々ある登壇とかで少し良い音声が入力できればよいというものだったので、狙いは1万前後のものだったのだけど、今日の状況によりすでにその価格帯の製品は売り切れているものが多く完全に出遅れた様相だった。残念ながら直近登壇的な出番があったので仕方がなく少し予算を増やして「Yeticaster」なるマイクを購入した。知り合い二人からおすすめされていたので品質については特に不安はなかったが3万円もする😇 テーブルの上にモノを起きたくない人なのでマイクもアームを使いたく調べると、Yeti にはデフォでアームのモデルがあるということでこれになった。
+
+![](https://lh3.googleusercontent.com/vtBaLtiofwidCkCP0r4UymwhHNX-qjFxqGTrqu7MyiX1Y-I9XDWOvM0ws_8PtoOdDIedNf3G7iurePWO3emOQK7d-cbjN5zf4AzsHhDgj73RDew6xyp_3e6Vu8JjSA3CZS1zUGZNUU4=w837-h628-no)
+
+注文後4, 5日で配達されて予定より早かったのでわいわいしたのだけど、実際のブツをみて失敗した気がした。めちゃくちゃでかい。店舗で実物を見ないでモノを使うとこうなる。今日の状況下では出かけるのはアレなので、みんな YouTube なりで製品レビューをしっかりみてから購入するにしよう。
+
+![](https://lh3.googleusercontent.com/EfJ7RB8N4WQ60eeI5DNCV3PVMEkdEAecBEmf4bMsL7Yv1CBvXi386h9LgPOQhUW_YU5bmfyxr8TOo6iT2-Z4g-xCN3pq8vVAKJWvo5J0Rth1MopOT3bujm3Ou6mUkHliIJ3Ukz8hgiU=w900)
+
+テーブルに設置してみると、ダンボールからの想像からは多少マシかなくらいには感じたけどやはりでかい。設置自体は特に難しいこともない。調整することは各関節の硬さくらい。目の前にあると圧迫感があるので少し左に配置するようにした。音声自体がどうだったかというと、一人で QuickTime で録画して聞いてみた限りではたしかに Macbook ビルドインのマイクに比べたらきれいに聞こえると思う。あと大きいモノは満足感も高い。テンションも上がる気がする。これが部屋から出て外に飲みに行けないストレスからきてるのかどうかはわからない。
+
+![](https://lh3.googleusercontent.com/jKiKzr7VhiFb2wRRkxtE1bes6rkQV7vmvvbA3jlVYhU1kumkGY0gq5arLTK0PMrCbzGudWGDTchy_aYHjL5V-wYoffZ1aHbWXIfe23kv1LU9vQLlyhhHSK7z6WOmrmZStvY-4fzaJ5Q=w900)
+
+気に入らないのは MUTE ボタンが常に赤く光っていることで、視野に入ってくるので気になってしようがない。MUTE が有効な場合は、ボタンが点滅するという仕様で、なぜ有効なときだけ光るようにしなかったのかと。電源ボタンがなくミニ USB ケーブルをつないで給電されていると常に電源が入ることになるので、機能していることを示すことを兼ねているのかもしれない。設定で消すこともできないようなので、使わないときはケーブルを抜いて電源を切るようにしている。ケーブルにはアクセスしやすいのでこの運用でも問題はない。
+
+![](https://lh3.googleusercontent.com/7kUj-BeSq-ILURahiIa5W7jpxPbnwwncB8YGN7aGcRbuqVTWDbzCqWXyxTL9NNYqgxQ1E70SDl497aoaKrW6r4Wd3AOMWFeioef7Jc4wXry5F17FzzratdLFxnrSTBjfiKoI2pD2Hsg=w837-h628-no)
+
+明日5/7は夜にミートアップで話す時間があるので、そこでの音声が良くなっていることを祈る。
+
+- [Blue \- Yeticaster](https://s3.amazonaws.com/cd.bluemic.com/img/yeticaster/yeticaster-header-desktop@2x.jpg)
+
+---
+
+このカルピスサワー濃くてうまい。カルピス原液を買ってきて適当に割って作るカルピスサワーではこうはいかない。
