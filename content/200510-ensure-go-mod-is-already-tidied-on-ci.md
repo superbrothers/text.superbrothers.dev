@@ -1,5 +1,5 @@
 ---
-title: "CI で go mod tidy コマンドが実行されていることを確認する"
+title: "CI で go mod tidy コマンドが実行済かどうかを確認する"
 date: 2020-05-10T12:24:08+09:00
 draft: false
 tags: ["go"]
