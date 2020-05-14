@@ -4,6 +4,8 @@ date: 2020-05-14T09:08:10+09:00
 draft: false
 ---
 
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">asdf がそれっぽいツールですね。私はこれで kubectl を管理してます。</p>&mdash; すぱぶら (Kazuki Suda) (@superbrothers) <a href="https://twitter.com/superbrothers/status/1260716343336112131?ref_src=twsrc%5Etfw">May 13, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 kubectl などの CLI ツールを複数のバージョンを切り替えながら使いたいことがあります。例えば本番のクラスタのバージョンは 1.16 だけど検証で 1.18 のクラスタを使うといったケースです。毎回どこからインストールするのかドキュメントを探したり、コマンドのヒストリを検索してみたり、`kubectl118` のような別名で管理したりと何かと面倒です。
 
 asdf-vm は、Node.js や Ruby、Python、Go といった言語で複数のバージョンを管理できる anyenv に似たツールで、言語に留まらず kubectl や istioctl といった CLI ツールもいい感じにインストールからバージョンの切り替えなどの管理ができます。asdf-vm のインストール手順は[ドキュメント](https://asdf-vm.com/#/core-manage-asdf-vm)をみてもらうとして、指定のバージョンの kubectl をインストールする流れを紹介します。
