@@ -3,7 +3,7 @@ title: "[CP-KBOX3] ネットワーク機器収納ボックス"
 date: 2020-05-15T18:36:59+09:00
 draft: false
 images:
-- https://pbs.twimg.com/media/EXdqYg6UcAA_c1e?format=jpg&name=large
+- https://lh3.googleusercontent.com/pw/ACtC-3dep6SIKQwu5lXGeY-wx4ZzYj1_PpOMgnidf9ISs3mx-JSsNbymaXz6aNciXtfkvwV6plc4qyYvNALlJyhtF1O3TPnHZdvYrLiiiWycyt_KjCe_L0C1--lo7wsNYsSVHTDlw5gOkrUo8-a35MFhne9YKg=w1528-h2036-no
 ---
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">箱を買いました。 <a href="https://t.co/zjUhr4Veyi">pic.twitter.com/zjUhr4Veyi</a></p>&mdash; すぱぶら (Kazuki Suda) (@superbrothers) <a href="https://twitter.com/superbrothers/status/1258591595219152896?ref_src=twsrc%5Etfw">May 8, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
