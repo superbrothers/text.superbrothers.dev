@@ -44,7 +44,7 @@ Org のメンバはデフォルトだとパッケージ、ここではコンテ�
 
 ロボットアカウントでパーソナルアクセストークンを作成します。ロボットアカウントで GitHub にアクセスした状態で https://github.com/settings/tokens/new にアクセスします。ここでトークンのスコープには `write:packages` を選択します。
 
-![write:packages のスコープでトークンを作成](https://lh3.googleusercontent.com/pw/ACtC-3eY9Iepdz_idhsf1utOI9ffWDN1PwWfUt8JJLgb1m1BaYEOnGfz-czEphYjEg9BN9X__b2NGB7xsxu1UV9o5T8GHIM1asmpu7qiQaEcQa8uXwagYXgNPekxFID8Wgu0t6T27xLT60cIuLiOmPNI6t41mQ=w1688-h1134-no)
+![write:packages のスコープでトークンを作成](https://lh3.googleusercontent.com/pw/ACtC-3dVg5q75tFVCjrlIXylvdKuNvJ0U34uLNQKC1fDcXrIEMsHUxwdVoH9e-cG5KvNt5ah7lnAZ7784i0IoAjjcqVsA0oE2QkqEegofCMJIB9nQQlz61G0fTJiPbvJpyG7FSmZltM5JT-dXkEXKBNM64Y2VA=w1594-h890-no)
 
 作成されたトークンはメモしておきます。
 
@@ -83,6 +83,10 @@ jobs:
     - name: Push image to GitHub Container Registry
       run: docker push ghcr.io/my_org/my_app:${{ github.event.inputs.tag }}
 ```
+
+## ほかのコンテナレジストリの選択肢は
+
+パブリックで使用できる他の選択肢として Red Hat 社が運営する [Quay.io](https://quay.io/) があります。こちらにはロボットアカウント機能があります。
 
 ## さいごに
 
