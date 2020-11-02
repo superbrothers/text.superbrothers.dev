@@ -3,7 +3,7 @@
   command = "hugo --minify"
 
 [build.environment]
-  HUGO_VERSION = "0.66.0"
+  HUGO_VERSION = "0.77.0"
   TZ = "Asia/Tokyo"
 
 [context.production]
