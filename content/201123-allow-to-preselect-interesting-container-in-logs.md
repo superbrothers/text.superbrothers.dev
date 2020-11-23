@@ -40,7 +40,7 @@ spec:
     command:
     - sh
     - -c
-    - 'while true; do echo $(date); done'
+    - 'while true; do echo $(date); sleep 1; done'
 ```
 
 `kubectl.kubernetes.io/default-logs-container` annotation で `app` が指定されているため、次のようにコンテナの指定なしに `kubectl logs` コマンドを実行すると `app` コンテナが選択されます。
