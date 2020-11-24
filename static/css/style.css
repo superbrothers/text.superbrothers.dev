@@ -15,15 +15,37 @@ body {
 #header {
     margin-bottom: 40px;
     font-family: Hack;
+    font-size: 1em;
+    display: flex;
+    justify-content: space-between;
 }
 
-#header .title a {
+.title {
+    line-height: 2;
+}
+
+.title a {
     color: #000;
     text-decoration: none;
-    font-size: 1em;
     font-weight: bold;
 }
 
+ul.lang {
+    display: flex;
+}
+
+ul.lang li {
+    list-style-type: none;
+    margin-right: 1em;
+}
+
+ul.lang li:before {
+    content: "";
+}
+
+ul.lang li + li:before {
+    content: " / ";
+}
 
 #main header {
     margin-bottom: 40px;
