@@ -1,5 +1,5 @@
 baseURL = "https://text.superbrothers.dev"
-languageCode = "ja-jp"
+defaultContentLanguage = "ja"
 title = "text․superbrothers․dev"
 pygmentsCodefences = true
 # This will make .Summary and .WordCount behave correctly for CJK languages.
@@ -21,3 +21,9 @@ googleAnalytics = "UA-10011477-9"
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[languages]
+  [languages.ja]
+    languageCode = "ja-jp"
+  [languages.en]
+    languageCode = "en-us"
