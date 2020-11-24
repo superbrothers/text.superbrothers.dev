@@ -1,0 +1,11 @@
+<ul class="lang">
+{{ range .Site.Languages }}
+<li>
+  {{ if eq .Lang $.Site.Language.Lang }}
+    {{ .Lang }}
+  {{ else }}
+    <a href="{{ .Params.baseURL }}/{{.Lang}}">{{ .Lang }}</a>
+  {{ end }}
+</li>
+{{ end }}
+</ul>
