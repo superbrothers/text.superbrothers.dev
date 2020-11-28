@@ -3,7 +3,14 @@
 <section id="main">
   <header>
     <h1 id="title">{{ .Title }}</h1>
-    <time datetime="{{ .Date.Local.Format "2006-01-02" }}">{{- .Date.Local.Format "Mon, 02 Jan 2006 15:04:05 -0700" -}}</time>
+    <ul class="frontmatter">
+        <li class="date"><time datetime="{{ .Date.Local.Format "2006-01-02" }}">{{- .Date.Local.Format "Mon, 02 Jan 2006 15:04:05 -0700" -}}</time></li>
+        {{ with .Params.tags }}
+        <li class="tags">{{ range . -}}
+            <span class="tag"><a href="/tags/{{ . | urlize }}">{{ . }}</a></span>
+        {{- end }}</li>
+        {{ end }}
+    </ul>
   </header>
   <article>
     {{ .Content }}

@@ -48,10 +48,20 @@ ul.lang li + li:before {
     margin-bottom: 40px;
 }
 
-#main header time {
+/* frontmatter */
+ul.frontmatter {
     font-size: .9rem;
     font-family: Hack, monospace;
 }
+ul.frontmatter:after{ content: "---"; }
+ul.frontmatter li:before { content: ""; }
+ul.frontmatter li.date:before { content: "date: "; }
+ul.frontmatter li.tags:before { content: "tags: ["; }
+ul.frontmatter li.tags:after { content: "]"; }
+ul.frontmatter li.tags .tag:before { content: "\""; }
+ul.frontmatter li.tags .tag:after { content: "\",\00a0"; }
+ul.frontmatter li.tags .tag:last-child:after { content: "\""; }
+/* frontmatter end */
 
 h1 {
     color: #000;
