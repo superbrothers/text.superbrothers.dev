@@ -9,6 +9,8 @@ SummaryLength = 200
 
 googleAnalytics = "UA-10011477-9"
 
+buildFuture = true
+
 [params]
   images = ["images/avatar_400x400.png"]
 
