@@ -1,7 +1,8 @@
 body {
     background-color: #fefefe;
     color: #3d3d3d;
-    font-family: "游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro",メイリオ,Meiryo,sans-serif;
+    font-family: "Noto Sans JP","游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro",メイリオ,Meiryo,sans-serif;
+    font-size: 0.95rem;
 }
 
 #content {
@@ -86,7 +87,7 @@ a {
 }
 
 p {
-    line-height: 1.6;
+    line-height: 1.9;
 }
 
 ul {
