@@ -3,6 +3,7 @@ title: "kubectl logs: specify the default container to output logs"
 date: 2020-11-23T11:03:15+09:00
 draft: false
 tags: ["kubernetes", "kubectl"]
+images: ["/ogp/201123-allow-to-preselect-interesting-container-in-logs.en.png"]
 ---
 
 If your pod contains multiple containers, running `kubectl logs` command will result in an error asking you to select one container as follows:

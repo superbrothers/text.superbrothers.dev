@@ -2,8 +2,7 @@
 title: "Yeticaster"
 date: 2020-05-06T21:01:03+09:00
 draft: false
-images:
-- https://lh3.googleusercontent.com/jKiKzr7VhiFb2wRRkxtE1bes6rkQV7vmvvbA3jlVYhU1kumkGY0gq5arLTK0PMrCbzGudWGDTchy_aYHjL5V-wYoffZ1aHbWXIfe23kv1LU9vQLlyhhHSK7z6WOmrmZStvY-4fzaJ5Q=w1770-h1328-no
+images: ["/ogp/200506-yeticaster.png"]
 ---
 
 4月開催の Kubernetes Meetup Tokyo は完全なリモート配信となり、主催もスピーカもみなリモートからになって、これまで配信環境の品質というものを全く気にしていなかったのだけど、あとからミートアップの録画を見直したら自分の声がすっごい籠もっていた。マイクには16インチ Macbook Pro のビルトインを使っていて、これまで Zoom を使った会議でも飲み会でも音声の質については何も言われたことがなかったので、問題ないのかなと思っていたがさすがに数百人に聞いてもらう環境ではこれではまずいことを認識した。あとから人に音声どうかなと聞いみたらたしかに籠もっていると思っていたと言っていたので、Macbook のビルドインマイクを使っている人、籠もっているぞ。

@@ -3,6 +3,7 @@ title: "Kustomize でマニフェストのフィールドを削除する"
 date: 2020-03-15T10:09:27+09:00
 draft: false
 tags: ["kubernetes", "kustomize"]
+images: ["/ogp/200315-delete-field-with-kustomize.png"]
 ---
 
 対象のフィールドの値を `null` としてパッチすることでフィールドそのものを削除できます。

@@ -2,6 +2,7 @@
 title: "複数バージョンの kubectl や他の CLI ツールを管理するには asdf-vm を使う"
 date: 2020-05-14T09:08:10+09:00
 draft: false
+images: ["/ogp/200514-managing-multiple-versions-of-kubectl-and-other-tools-with-asdf-vm.png"]
 ---
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">asdf がそれっぽいツールですね。私はこれで kubectl を管理してます。</p>&mdash; すぱぶら (Kazuki Suda) (@superbrothers) <a href="https://twitter.com/superbrothers/status/1260716343336112131?ref_src=twsrc%5Etfw">May 13, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

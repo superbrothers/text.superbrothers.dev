@@ -2,6 +2,7 @@
 title: "Twitter で URL が自動的にリンクされないようにする"
 date: 2019-06-22T15:00:22Z
 draft: false
+images: ["/ogp/190622-how-to-stop-twitter-auto-linking-urls.png"]
 ---
 
 ## TL;DR

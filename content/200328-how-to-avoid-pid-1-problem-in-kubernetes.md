@@ -3,6 +3,7 @@ title: "Docker/Kubernetes で PID 1 問題を回避する"
 date: 2020-03-28T12:34:05+09:00
 draft: false
 tags: ["kubernetes", "docker"]
+images: ["/ogp/200328-how-to-avoid-pid-1-problem-in-kubernetes.png"]
 ---
 
 ## はじめに

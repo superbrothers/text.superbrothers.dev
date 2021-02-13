@@ -2,7 +2,7 @@
 title: "kubectl sort-manifests プラグイン: マニフェストファイルを適切なインストール順序に並び替える"
 date: 2019-05-12T03:06:24Z
 tags: ["kubernetes", "kubectl plugin"]
-
+images: ["/ogp/190512-kubectl-sort-manifests-plugin.png"]
 ---
 
 19年4月22日に開催した Kubernetes Meetup Tokyo #18 でメルカリでの Kubernetes マニフェストの管理とオペレーションについて話してもらいました。そのなかで「Kubernetes マニフェストファイルを適用すべきファイルの順序をどのように取得して、実際にどう適用するか」という話がありました。

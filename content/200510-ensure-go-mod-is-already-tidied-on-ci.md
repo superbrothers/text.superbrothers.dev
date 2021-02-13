@@ -3,6 +3,7 @@ title: "CI で go mod tidy コマンドが実行済かどうかを確認する"
 date: 2020-05-10T12:24:08+09:00
 draft: false
 tags: ["go"]
+images: ["/ogp/200510-ensure-go-mod-is-already-tidied-on-ci.png"]
 ---
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">CI で `go mod tidy` を実行して差分が出たらコケるようにして気づかせるとかでいいだろうか。</p>&mdash; すぱぶら (Kazuki Suda) (@superbrothers) <a href="https://twitter.com/superbrothers/status/1252762835563589632?ref_src=twsrc%5Etfw">April 22, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

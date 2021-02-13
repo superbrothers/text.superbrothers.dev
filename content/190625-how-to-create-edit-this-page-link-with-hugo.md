@@ -3,6 +3,7 @@ title: "Hugo で記事ページに「Edit this page（このページを編集�
 date: 2019-06-24T23:35:20Z
 draft: false
 tags: ["hugo"]
+images: ["/ogp/190625-how-to-create-edit-this-page-link-with-hugo.png"]
 ---
 
 ## はじめに

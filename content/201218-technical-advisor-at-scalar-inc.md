@@ -2,8 +2,7 @@
 title: "株式会社Scalar の技術アドバイザに就任しました"
 date: 2020-12-18T12:00:00+09:00
 draft: false
-images:
-- https://lh3.googleusercontent.com/pw/ACtC-3fmnywgRXlU8Ga_D7Bluiaa600QaTY3DSZBNqw-M8-TnIREOb4SuBBAcBubMIN7gbYCqhlh53b-jBZYn71RQjj14h128R7VYYmHu3iFiDY9z_YYCLvcGSQFXJlO1AMLnlaS8yvYF3vUg5fk86ED_APFGg=w1200-h600-no
+images: ["/ogp/201218-technical-advisor-at-scalar-inc.png"]
 ---
 
 2020年9月頃から株式会社Scalar の技術アドバイザに就任してました。副業として参加しており、週に数時間という業務形態です。

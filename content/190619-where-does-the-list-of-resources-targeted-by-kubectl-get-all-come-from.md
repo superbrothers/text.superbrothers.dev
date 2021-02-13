@@ -3,6 +3,7 @@ title: "kubectl get all で対象となるリソースリストはどこから�
 date: 2019-06-19T13:37:06Z
 tags: ["kubernetes", "kubectl"]
 draft: false
+images: ["/ogp/190619-where-does-the-list-of-resources-targeted-by-kubectl-get-all-come-from.png"]
 ---
 
 ## TL;DR

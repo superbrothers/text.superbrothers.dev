@@ -3,6 +3,7 @@ title: "[Cluster API] clusterctl コマンドにシェル自動補完機能を�
 date: 2020-10-02T09:43:20+09:00
 tags: ["kubernetes", "cluster-api"]
 draft: false
+images: ["/ogp/201002-clusterctl-completion-command.png"]
 ---
 
 Cluster API v0.3.10 で CLI ツールである `clusterctl` にサブコマンドとフラグのシェル自動補完機能を追加しました。

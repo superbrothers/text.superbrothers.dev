@@ -3,6 +3,7 @@ title: "Kubernetes 1.18: clientgofix を使って client-go の新しいイン�
 date: 2020-04-06T22:03:04+09:00
 draft: false
 tags: ["kubernetes"]
+images: ["/ogp/200406-trying-to-use-clientgofix.png"]
 ---
 
 Kubernetes 1.18 で k8s.io/client-go でいくつかの変更が入りました。詳しくは次のとおりです。

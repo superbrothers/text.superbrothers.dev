@@ -3,7 +3,7 @@ title: "ロボットアカウントから GitHub Container Registry（GHCR）を
 date: 2020-11-02T10:54:44+09:00
 tags: ["github", "github actions", "github container registry", "ghcr", "docker", "container"]
 draft: false
-
+images: ["/ogp/201102-using-github-container-registry-with-robot-account.png"]
 ---
 
 ## はじめに
