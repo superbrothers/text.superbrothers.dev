@@ -3,6 +3,7 @@ title: "/usr/local/go/pkg/tool/linux_amd64/link: signal: killed"
 date: 2019-06-26T08:27:41Z
 draft: false
 tags: ["golang", "kubernetes", "docker"]
+images: ["/ogp/190626-link-signal-killed.png"]
 ---
 
 ## TL;DR

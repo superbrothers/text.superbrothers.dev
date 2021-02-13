@@ -3,7 +3,7 @@ title: "kubectl get all は全リソースの情報を表示しない"
 date: 2019-06-16T04:41:03Z
 draft: false
 tags: ["kubernetes", "kubectl"]
-
+images: ["/ogp/190616-kubectl-get-all-does-not-include-most-resources.png"]
 ---
 
 ## TL;DR

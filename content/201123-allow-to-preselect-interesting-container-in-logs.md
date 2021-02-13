@@ -3,6 +3,7 @@ title: "kubectl logs: デフォルトでログ出力するコンテナを指定�
 date: 2020-11-23T11:03:15+09:00
 draft: false
 tags: ["kubernetes", "kubectl"]
+images: ["/ogp/201123-allow-to-preselect-interesting-container-in-logs.png"]
 ---
 
 Pod に複数のコンテナが含まれる場合に、`kubectl logs` コマンドを実行すると次のように1つのコンテナを選択するようにとエラーになります。

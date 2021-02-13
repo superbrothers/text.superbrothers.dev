@@ -3,6 +3,7 @@ title: "kind で作成したクラスタに中間証明書をインストール�
 date: 2020-03-13T10:52:32+09:00
 draft: false
 tags: ["kubernetes", "kind"]
+images: ["/ogp/200313-kind-load-certfiles.png"]
 ---
 
 コンテナイメージの取得に「x509: certificate signed by unknown authority」エラーで失敗する場合、中間証明書がインストールされていないことが考えられます。kind で作成したクラスタの場合で発生した場合にも中間証明書を各ノードにインストールする必要がありますが、kind にはそれ専用のコマンドが用意されていないため、各ノードで次の手順を実行する必要があります。ノードの一覧は `kind get nodes` で取得できます。

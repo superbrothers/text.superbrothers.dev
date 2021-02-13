@@ -3,6 +3,7 @@ title: "GNU screen から tmux に移行したついでにドットファイル�
 date: 2021-02-13T18:11:06+09:00
 tags: ["tmux", "vim", "zsh", "dotfiles"]
 draft: false
+images: ["/ogp/210213-use-tmux-instead-of-gnu-screen.png"]
 ---
 
 ## tmux
