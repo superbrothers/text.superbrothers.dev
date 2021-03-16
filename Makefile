@@ -21,7 +21,7 @@ serve-dev:
 
 .PHONY: new-post
 new-post:
-	@HUGO="$(HOGO)" ./hack/new-post.sh
+	@HUGO="$(HUGO)" ./hack/new-post.sh
 
 .PHONY: run-in-hugo
 run-in-hugo:
