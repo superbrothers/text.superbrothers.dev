@@ -16,7 +16,7 @@ images:
 
 - [Best VPN Service for Secure Networks \- Tailscale](https://tailscale.com/)
 
-はじめて使ったけど、めっちゃ楽でいい感じ。自宅にあるマシンには全て入れた。手軽すぎて特にいうことはない。解説記事がほかにあるので気になる人はそっちをみてみて。
+はじめて使ったけど、めっちゃ楽でいい感じ。自宅にあるマシンには全て入れた。手軽すぎて特にいうことはない。解説記事は他所にあるので気になる人はそっちをみてみて。
 
 ## ルートパーティションを暗号化したい
 
@@ -26,7 +26,7 @@ images:
 
 Ubuntu 20.04 だと `dropbear-initramfs` パッケージをインストールするだけ。あとは使用する公開鍵を `/etc/dropbear-initramfs/authorized_keys` のファイル名で置く。最後に `sudo update-initramfs -u` で `initramfs` を更新すれば終わり。
 
-注意する点としては dropbear が ed25519 をサポートしていないので、RSA を使わないといけない。ed25519 をサポートするパッチがあったものもあるみたいだけど、変にハマりたくなかったので今回は素直に RSA 鍵を生成した。2つの鍵は管理したくないけど仕方がない。
+注意する点としては dropbear が ed25519 をサポートしていないので、RSA を使わないといけない。ed25519 をサポートするパッチがあたったものもあるみたいだけど、変にハマりたくなかったので今回は素直に RSA 鍵を生成した。鍵を2つは管理したくないけど仕方がない。
 
 リブートした際は SSH でログインして（`root` ユーザ）、次のコマンドを実行してルートパーティションを復号化すればいい。
 
@@ -34,11 +34,11 @@ Ubuntu 20.04 だと `dropbear-initramfs` パッケージをインストールす
 cryptroot-unlock
 ```
 
-外部からリブートしたとき復号化のタイミングで Tailscale のデーモンが起動していないので SSH ログインできなくなっちゃうんだけど、それには他のマシンから入るようにするだけでいい。適当なマシンがない場合はその辺にあるラズパイに Tailscale のエージェントを入れておくだけでよいと思う。
+外部からリブートすると復号化のタイミングで Tailscale のデーモンが起動していないので SSH ログインできなくなっちゃうんだけど、それには他のマシンから入るようにするだけでいい。適当なマシンがない場合はその辺にあるラズパイに Tailscale のエージェントを入れておくだけでよいと思う。
 
 ## リモートのクリップボードを共有したい
 
-クリップボードの共有には clipper が簡単に使える。ローカルに立てたサーバのポートをリモートに SSH Remote forward で転送して、リモートではそのポートに書き込むことでサーバが受け取ったらクリップボードに書き込むという挙動っぽい。ç¹に難しいことはないが、いくつか Tips がある。インストール等は簡単なので README を参照。
+クリップボードの共有には clipper が簡単に使える。ローカルに立てたサーバのポートをリモートに SSH Remote forward で転送して、リモートではそのポートに書き込むことでサーバが受け取ったらクリップボードに書き込むという挙動っぽい。とくに難しいことはないが、いくつか Tips がある。インストール等は簡単なので README を参照。
 
 - [wincent/clipper: ✂️ Clipboard access for local and remote tmux sessions](https://github.com/wincent/clipper)
 
@@ -60,7 +60,7 @@ $ brew services start clipper
 
 ```
 Host host.example.org
-  RemoteForward /home/me/.clipper.sock /Users/me/.clipper.sock```
+  RemoteForward /home/me/.clipper.sock /Users/me/.clipper.sock
 ```
 
 これでリモート側の `/home/me/clipper.sock` に Unix ドメインソケットが作成されるので、これに対して次のように送信すれば ローカルのクリップボードに入っている。
@@ -69,7 +69,7 @@ Host host.example.org
 date | socat - UNIX-CLIENT:$HOME/.clipper.sock
 ```
 
-ただこれだけだと SSH のセッションが閉ãられてもソケットファイルが残ったままになってしまい、次ログインしてもソケットに送信できなくなる。自動的に削除するには sshd の設定に次を足すとよい。Ubuntu 20.04 では次の場所に設定ファイルを追加して sshd を再起動する。
+ただこれだけだと SSH のセッションが閉じられてもソケットファイルが残ったままになってしまい、次ログインしてもソケットに送信できなくなる。自動的に削除するには sshd の設定に次を足すとよい。Ubuntu 20.04 では次の場所に設定ファイルを追加して sshd を再起動する。
 
 ```
 # /etc/ssh/sshd_config.d/clipper.conf
@@ -91,7 +91,7 @@ $ brew install superbrothers/opener
 $ brew services start opener
 ```
 
-サーバは `~/.opener.sock` を作るので、これを SSH Remote forward で転送するãうに設定する。
+サーバは `~/.opener.sock` を作るので、これを SSH Remote forward で転送するように設定する。
 
 ```
 Host host.example.org
