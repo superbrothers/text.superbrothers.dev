@@ -3,7 +3,7 @@
 set -e -o pipefail; [[ -n "$DEBUG" ]] && set -x
 
 SCRIPT_ROOT="$(cd "$(dirname "$0")"; pwd)"
-HUGO=("${HUGO:-hugo}")
+HUGO=( ${HUGO:-hugo} )
 
 yymmdd="$(date +%y%m%d)"; \
 content_file="content/${yymmdd}-<title>.md"
