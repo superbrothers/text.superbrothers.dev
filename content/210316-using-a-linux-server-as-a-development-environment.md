@@ -63,10 +63,22 @@ Host host.example.org
   RemoteForward /home/me/.clipper.sock /Users/me/.clipper.sock
 ```
 
-これでリモート側の `/home/me/clipper.sock` に Unix ドメインソケットが作成されるので、これに対して次のように送信すれば ローカルのクリップボードに入っている。
+これでリモート側の `/home/me/clipper.sock` に Unix ドメインソケットが作成されるので、これに対して次のように送信すれば `date` の実行結果がローカルのクリップボードに入るという仕組み。
 
 ```
 date | socat - UNIX-CLIENT:$HOME/.clipper.sock
+```
+
+実際には上を次のように alias に設定しておけばいい。
+
+```sh
+alias pbcopy='socat - UNIX-CLIENT:$HOME/.clipper.sock'
+```
+
+これで macOS と同じ感じで使える。
+
+```sh
+$ date | pbcopy
 ```
 
 ただこれだけだと SSH のセッションが閉じられてもソケットファイルが残ったままになってしまい、次ログインしてもソケットに送信できなくなる。自動的に削除するには sshd の設定に次を足すとよい。Ubuntu 20.04 では次の場所に設定ファイルを追加して sshd を再起動する。
