@@ -6,6 +6,8 @@ draft: false
 images: ["/ogp/201102-using-github-container-registry-with-robot-account.png"]
 ---
 
+2021/04/15: GitHub Actions のワークフローで `GITHUB_TOKEN` を使って `ghcr.io` で認証できるようになりました。個々のコンテナイメージ毎に特定のリポジトリのワークフローで `READ/WRITE` のどちらを許可するのか選択できます。詳しくは [Packages: Container registry now supports GITHUB\_TOKEN \- GitHub Changelog](https://github.blog/changelog/2021-03-24-packages-container-registry-now-supports-github_token/) を参照ください。
+
 ## はじめに
 
 Docker Hub の Rate Limit の件もあり、新しくイメージをホストするコンテナレジストリとして GitHub Container Registry（GHCR）を使ってみようとしましたが、ロボットアカウントから使用するのにいくつかハマりポイントがあったので残します。
