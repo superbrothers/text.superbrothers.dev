@@ -57,6 +57,7 @@ ul.frontmatter {
 ul.frontmatter:after{ content: "---"; }
 ul.frontmatter li:before { content: ""; }
 ul.frontmatter li.date:before { content: "date: "; }
+ul.frontmatter li.author:before { content: "author: "; }
 ul.frontmatter li.tags:before { content: "tags: ["; }
 ul.frontmatter li.tags:after { content: "]"; }
 ul.frontmatter li.tags .tag:before { content: "\""; }

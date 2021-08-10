@@ -5,6 +5,7 @@
     <h1 id="title">{{ .Title }}</h1>
     <ul class="frontmatter">
         <li class="date"><time datetime="{{ .Date.Local.Format "2006-01-02" }}">{{- .Date.Local.Format "Mon, 02 Jan 2006 15:04:05 -0700" -}}</time></li>
+        <li class="author"><a href="https://twitter.com/{{ .Site.Params.social.twitter | urlize }}" target="_blank">@{{ .Site.Params.social.twitter | html }}</a></li>
         {{ with .Params.tags }}
         <li class="tags">{{ range . -}}
             <span class="tag"><a href="{{ "tags" | absLangURL}}/{{ . | urlize }}">{{ . }}</a></span>

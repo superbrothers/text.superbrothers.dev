@@ -14,6 +14,9 @@ buildFuture = true
 [params]
   images = ["images/avatar_400x400.png"]
 
+  [params.social]
+    twitter = "superbrothers"
+
 [Taxonomies]
   # Remove the "categories"
   # https://discourse.gohugo.io/t/i-dont-want-tags-and-categories/12091/6
