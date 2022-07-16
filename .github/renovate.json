@@ -5,7 +5,7 @@
     {
       "fileMatch": ["(^|/)(Makefile|netlify.toml)$"],
       "matchStrings": [
-        "\\s*#\\s*renovate:\\s*datasource=(?<datasource>.*?)\\s+depName=(?<depName>.*?)(\\s+versioning=(?<versioning>.*?))?(\\s+registry=(?<registryUrl>.*?))?\\s.*?_VERSION\\s+[^=]?=\\s+\"?(?<currentValue>.*)\"?\\s"
+        "\\s*#\\s*renovate:\\s*datasource=(?<datasource>.*?)\\s+depName=(?<depName>.*?)(\\s+versioning=(?<versioning>.*?))?(\\s+registry=(?<registryUrl>.*?))?\\s.*?_VERSION\\s+[^=]?=\\s+\"?(?<currentValue>[^\"]*)\"?\\s"
       ],
       "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}"
     }
