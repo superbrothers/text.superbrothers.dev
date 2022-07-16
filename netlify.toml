@@ -4,7 +4,7 @@
 
 [build.environment]
   # renovate: datasource=docker depName=docker.io/klakegg/hugo
-  HUGO_VERSION = "0.95.0"
+  HUGO_VERSION = "0.101.0"
   TZ = "Asia/Tokyo"
 
 [context.production]
