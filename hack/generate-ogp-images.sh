@@ -44,7 +44,12 @@ export -f generate-ogp-image
 
 make -C "${SCRIPT_ROOT}/.." serve-without-watch &
 PID="$!"
-trap "kill $PID" EXIT
+function on-exit() {
+  kill "$PID"
+  cd "${SCRIPT_ROOT}/.."
+  rm -rf .hugo_build.lock resources
+}
+trap on-exit EXIT
 
 # wait for serving pages
 while true; do
@@ -55,5 +60,5 @@ while true; do
 done
 
 cd "${OGP_DIR}"
-find "${CONTENT_DIR}" -name "*.md" | xargs -I_ -L 1 -P 5 bash -c 'generate-ogp-image _'
+find "${CONTENT_DIR}" -name "*.md" | xargs -I{} -P 5 bash -c 'generate-ogp-image {}'
 # vim: ai ts=2 sw=2 et sts=2 ft=sh
