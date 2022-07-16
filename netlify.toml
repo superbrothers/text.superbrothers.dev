@@ -3,6 +3,7 @@
   command = "hugo --minify"
 
 [build.environment]
+  # renovate: datasource=docker depName=docker.io/klakegg/hugo
   HUGO_VERSION = "0.95.0"
   TZ = "Asia/Tokyo"
 
