@@ -37,7 +37,7 @@ function generate-ogp-image() {
     1200x630 \
     --crop \
     --filename="$content_name" \
-    --delay=5 \
+    --delay=10 \
     --css='#content { max-width: none; } html { font-size: 1.5em; }'
 }
 export -f generate-ogp-image
