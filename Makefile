@@ -1,4 +1,4 @@
-DOCKER_RUN := docker run --rm --init -v $(shell pwd):/src -w /src
+DOCKER_RUN := docker run --rm --init -v $(shell pwd):/src -w /src -u "$(shell id -u)"
 # renovate: datasource=docker depName=docker.io/klakegg/hugo
 HUGO_VERSION ?= 0.101.0
 HUGO_IMAGE := docker.io/klakegg/hugo:$(HUGO_VERSION)
@@ -36,4 +36,4 @@ PAGERES_VERSION ?= v6.0.1
 .PHONY: generate-ogp-images
 generate-ogp-images:
 	DOCKER_BUILDKIT=1 docker build --build-arg HUGO_IMAGE=$(HUGO_IMAGE) --build-arg PAGERES_VERSION=$(subst v,,$(PAGERES_VERSION)) -t generate-ogp-images -f hack/Dockerfile .
-	$(DOCKER_RUN) --cap-add=SYS_ADMIN -u "$(shell id -u)" -e HUGO=hugo generate-ogp-images ./hack/generate-ogp-images.sh
+	$(DOCKER_RUN) --cap-add=SYS_ADMIN -e HUGO=hugo generate-ogp-images ./hack/generate-ogp-images.sh
