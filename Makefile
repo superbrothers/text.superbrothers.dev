@@ -1,6 +1,6 @@
 DOCKER_RUN := docker run --rm --init -v $(shell pwd):/src -w /src -u "$(shell id -u)"
 # renovate: datasource=docker depName=docker.io/klakegg/hugo
-HUGO_VERSION ?= 0.101.0
+HUGO_VERSION ?= 0.111.3
 HUGO_IMAGE := docker.io/klakegg/hugo:$(HUGO_VERSION)
 HUGO ?= $(DOCKER_RUN) -e HUGO_ENV -p 8080:8080 $(HUGO_IMAGE) $(HUGO_OPTS)
 
