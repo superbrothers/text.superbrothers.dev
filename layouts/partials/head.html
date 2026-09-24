@@ -1,11 +1,17 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+{{- $title := .Title -}}
+{{- if eq .Kind "term" -}}
+  {{- $title = printf "tag: %s" (or .Data.Term (.Title | lower)) -}}
+{{- else if eq .Kind "taxonomy" -}}
+  {{- $title = or .Data.Plural (.Title | lower) -}}
+{{- end -}}
 <title>
-{{- if eq .Title site.Title -}}
+{{- if or (eq $title site.Title) (not $title) -}}
 {{ site.Title }}
 {{- else -}}
-{{ with .Title }}{{ . }} | {{ end }}{{ site.Title }}
+{{ $title }} | {{ site.Title }}
 {{- end -}}
 </title>
 <link rel="icon" href="{{ "favicon.ico" | absURL }}">

@@ -65,6 +65,15 @@ ul.frontmatter li.tags .tag:after { content: "\",\00a0"; }
 ul.frontmatter li.tags .tag:last-child:after { content: "\""; }
 /* frontmatter end */
 
+.divider {
+    font-size: .9rem;
+    font-family: Hack, monospace;
+}
+.divider:after {
+    content: "---";
+}
+
+
 h1 {
     color: #000;
 }
