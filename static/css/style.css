@@ -121,6 +121,49 @@ ul li:before {
     content: "- ";
 }
 
+.article ul {
+    padding-left: 1.2em;
+    margin: 1.2em 0;
+}
+
+.article li > ul {
+    padding-left: 1.2em;
+    margin: 0.3em 0;
+    text-indent: 0;
+}
+
+.article ul li {
+    line-height: 1.7;
+    padding-left: 1.2em;
+    text-indent: -1.2em;
+}
+
+.article ul li + li {
+    margin-top: 0.4em;
+}
+
+.article ul li:before {
+    font-family: Hack, monospace;
+    color: #555;
+}
+
+.article ol {
+    padding-left: 1.5em;
+    margin: 1.2em 0;
+}
+
+.article ol li {
+    line-height: 1.7;
+}
+
+.article ol li + li {
+    margin-top: 0.4em;
+}
+
+.article li > ol {
+    margin: 0.3em 0;
+}
+
 table {
     width: 100%;
     margin: 30px 0;
