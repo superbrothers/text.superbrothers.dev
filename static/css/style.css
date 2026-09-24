@@ -217,8 +217,19 @@ img {
     margin: 0 auto;
 }
 
-blockquote {
-    font-style: italic;
+.article blockquote {
+    margin: 1.5em 0;
+    padding: 0.2em 0 0.2em 1.2em;
+    border-left: 3px solid #ccc;
+    color: #555;
+}
+
+.article blockquote > :first-child {
+    margin-top: 0;
+}
+
+.article blockquote > :last-child {
+    margin-bottom: 0;
 }
 
 #footer {
