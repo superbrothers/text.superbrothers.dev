@@ -1,0 +1,17 @@
+{{ define "main" }}
+
+<section id="main">
+  <header>
+    <h1 id="title">{{ or .Data.Plural (.Title | lower) }}</h1>
+    <div class="divider"></div>
+  </header>
+  <ul>
+    {{ range .Pages }}
+    <li>
+      <time>{{ .PublishDate.Format "2006/01/02" }}</time> <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </li>
+    {{ end }}
+  </ul>
+</section>
+
+{{ end }}
