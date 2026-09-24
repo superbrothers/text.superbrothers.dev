@@ -4,8 +4,8 @@ set -e -o pipefail; [[ -n "$DEBUG" ]] && set -x
 
 SCRIPT_ROOT="$(cd "$(dirname "$0")"; pwd)"
 
-CONTENT_DIR="${SCRIPT_ROOT}/../content"
-OGP_DIR="${SCRIPT_ROOT}/../static/ogp"
+CONTENT_DIR="${SCRIPT_ROOT}/../../content"
+OGP_DIR="${SCRIPT_ROOT}/../../static/ogp"
 mkdir -p "${OGP_DIR}"
 
 if ! command -v pageres >/dev/null; then
@@ -42,7 +42,7 @@ function generate-ogp-image() {
 }
 export -f generate-ogp-image
 
-serve -l 8080 "${SCRIPT_ROOT}/../public" &
+serve -l 8080 "${SCRIPT_ROOT}/../../public" &
 PID="$!"
 function on-exit() {
   kill "$PID"

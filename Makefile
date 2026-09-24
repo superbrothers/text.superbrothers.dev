@@ -36,5 +36,12 @@ serve-without-watch:
 PAGERES_VERSION ?= v9.0.0
 .PHONY: generate-ogp-images
 generate-ogp-images: build
-	DOCKER_BUILDKIT=1 docker build --build-arg PAGERES_VERSION=$(subst v,,$(PAGERES_VERSION)) -t generate-ogp-images -f hack/Dockerfile .
-	$(DOCKER_RUN) --cap-add=SYS_ADMIN generate-ogp-images ./hack/generate-ogp-images.sh
+	DOCKER_BUILDKIT=1 docker build --build-arg PAGERES_VERSION=$(subst v,,$(PAGERES_VERSION)) -t generate-ogp-images -f hack/ogp/Dockerfile .
+	$(DOCKER_RUN) --cap-add=SYS_ADMIN generate-ogp-images ./hack/ogp/generate-ogp-images.sh
+
+.PHONY: optimize-images
+optimize-images:
+	DOCKER_BUILDKIT=1 docker build --target export --output . -f hack/optimizer/Dockerfile .
+	@find content -type f \( -name "*.png" -o -name "*.jpg" -o -name "*.jpeg" -o -name "*.tiff" -o -name "*.bmp" \) \
+		-exec bash -c 'for f; do [[ -f "$${f%.*}.webp" ]] && rm -f "$$f" && echo "Removed original: $$f"; done' _ {} +
+
