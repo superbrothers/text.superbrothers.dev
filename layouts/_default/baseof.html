@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.LanguageCode }}">
+<html lang="{{ site.Language.Locale }}">
     {{- partial "head.html" . -}}
     <body>
         <div id="content">
@@ -8,7 +8,7 @@
         {{- partial "footer.html" . -}}
         </div>
         {{- if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production") }}
-        {{- template "_internal/google_analytics_async.html" . }}
+        {{- template "_internal/google_analytics.html" . }}
         {{- end }}
     </body>
 </html>

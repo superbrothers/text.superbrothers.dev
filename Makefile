@@ -1,7 +1,7 @@
-DOCKER_RUN := docker run --rm --init -v $(shell pwd):/src -w /src -u "$(shell id -u)"
-# renovate: datasource=docker depName=docker.io/klakegg/hugo
-HUGO_VERSION ?= 0.101.0
-HUGO_IMAGE := docker.io/klakegg/hugo:$(HUGO_VERSION)
+DOCKER_RUN := docker run --rm --init -v $(shell pwd):/src -w /src -u "$(shell id -u):$(shell id -g)"
+# renovate: datasource=github-releases depName=gohugoio/hugo
+HUGO_VERSION ?= 0.166.0
+HUGO_IMAGE ?= ghcr.io/gohugoio/hugo:v$(HUGO_VERSION)
 HUGO ?= $(DOCKER_RUN) -e HUGO_ENV -p 8080:8080 $(HUGO_IMAGE) $(HUGO_OPTS)
 
 .PHONY: build
@@ -26,14 +26,15 @@ new-post:
 
 .PHONY: run-in-hugo
 run-in-hugo:
-	$(DOCKER_RUN) -it $(HUGO_IMAGE) /bin/sh
+	$(DOCKER_RUN) -it --entrypoint /bin/sh $(HUGO_IMAGE)
 
 .PHONY: serve-without-watch
 serve-without-watch:
 	HUGO_ENV=production $(HUGO) server --bind=0.0.0.0 -p 8080 --minify --watch=false
 
-PAGERES_VERSION ?= v6.0.1
+# renovate: datasource=npm depName=pageres-cli
+PAGERES_VERSION ?= v9.0.0
 .PHONY: generate-ogp-images
-generate-ogp-images:
-	DOCKER_BUILDKIT=1 docker build --build-arg HUGO_IMAGE=$(HUGO_IMAGE) --build-arg PAGERES_VERSION=$(subst v,,$(PAGERES_VERSION)) -t generate-ogp-images -f hack/Dockerfile .
-	$(DOCKER_RUN) --cap-add=SYS_ADMIN -e HUGO=hugo generate-ogp-images ./hack/generate-ogp-images.sh
+generate-ogp-images: build
+	DOCKER_BUILDKIT=1 docker build --build-arg PAGERES_VERSION=$(subst v,,$(PAGERES_VERSION)) -t generate-ogp-images -f hack/Dockerfile .
+	$(DOCKER_RUN) --cap-add=SYS_ADMIN generate-ogp-images ./hack/generate-ogp-images.sh

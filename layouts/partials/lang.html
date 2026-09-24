@@ -1,10 +1,10 @@
 <ul class="lang">
-{{ range .Site.Languages }}
+{{ range hugo.Sites }}
 <li>
-  {{ if eq .Lang $.Site.Language.Lang }}
-    {{ .Lang }}
+  {{ if eq .Language.Lang $.Site.Language.Lang }}
+    {{ .Language.Lang }}
   {{ else }}
-    <a href="{{ .Params.baseURL }}/{{.Lang}}">{{ .Lang }}</a>
+    <a href="{{ .Language.Params.baseURL }}/{{ .Language.Lang }}">{{ .Language.Lang }}</a>
   {{ end }}
 </li>
 {{ end }}

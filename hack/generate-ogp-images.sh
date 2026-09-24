@@ -42,12 +42,10 @@ function generate-ogp-image() {
 }
 export -f generate-ogp-image
 
-make -C "${SCRIPT_ROOT}/.." serve-without-watch &
+serve -l 8080 "${SCRIPT_ROOT}/../public" &
 PID="$!"
 function on-exit() {
   kill "$PID"
-  cd "${SCRIPT_ROOT}/.."
-  rm -rf .hugo_build.lock resources
 }
 trap on-exit EXIT
 
