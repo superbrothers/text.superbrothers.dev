@@ -1,13 +1,9 @@
-ARG HUGO_IMAGE
-
-FROM $HUGO_IMAGE AS hugo-base
-
-FROM docker.io/node:16
+FROM docker.io/node:22-bookworm
 
 ARG PAGERES_VERSION
 
 RUN set -x && \
-    npm install "pageres-cli@${PAGERES_VERSION}" --location=global
+    npm install "pageres-cli@${PAGERES_VERSION}" serve --location=global
 
 RUN set -x && \
     apt update && \
@@ -20,6 +16,6 @@ RUN set -x && \
         fonts-noto-cjk \
         fonts-hack
 
-COPY --from=hugo-base /usr/lib/hugo/hugo /bin/
+ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium
 
 ENTRYPOINT []
