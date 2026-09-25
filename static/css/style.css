@@ -193,10 +193,52 @@ code:before, code:after {
     content: "`";
 }
 
+.code-block {
+    position: relative;
+    margin: 1.5em 0;
+}
+
+.code-lang {
+    position: absolute;
+    top: 10px;
+    left: 16px;
+    z-index: 2;
+    font-family: Hack, monospace;
+    font-size: 0.8rem;
+    color: #75715e;
+    user-select: none;
+}
+
+.code-copy-btn {
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    z-index: 2;
+    font-family: Hack, monospace;
+    font-size: 0.8rem;
+    color: #75715e;
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: color 0.15s ease;
+    user-select: none;
+}
+
+.code-copy-btn:hover {
+    color: #f8f8f2;
+}
+
+.code-copy-btn.copied {
+    color: #a6e22e;
+}
+
 pre {
     overflow: auto;
-    padding: 20px;
+    padding: 34px 20px 20px;
     background-color: #272822;
+    border-radius: 4px;
+    margin: 0;
 }
 
 pre code {
@@ -247,8 +289,11 @@ img {
 }
 
 @media (max-width: 916px) {
-    pre {
+    .code-block, pre {
         margin-left: -16px;
         margin-right: -16px;
+    }
+    pre {
+        border-radius: 0;
     }
 }

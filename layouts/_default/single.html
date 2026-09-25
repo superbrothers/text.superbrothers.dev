@@ -18,4 +18,23 @@
   </article>
 </section>
 
+<script>
+document.querySelectorAll('.code-copy-btn').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var block = btn.closest('.code-block');
+    var code = block.querySelector('pre code') || block.querySelector('pre');
+    if (!code) return;
+    navigator.clipboard.writeText(code.innerText || code.textContent).then(function() {
+      var original = btn.textContent;
+      btn.textContent = 'copied!';
+      btn.classList.add('copied');
+      setTimeout(function() {
+        btn.textContent = original;
+        btn.classList.remove('copied');
+      }, 1500);
+    });
+  });
+});
+</script>
+
 {{ end }}

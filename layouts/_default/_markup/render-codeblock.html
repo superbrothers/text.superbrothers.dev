@@ -1,0 +1,5 @@
+<div class="code-block">
+  <span class="code-lang">{{ if .Type }}```{{ .Type }}{{ else }}```{{ end }}</span>
+  <button class="code-copy-btn" type="button" aria-label="Copy code">copy</button>
+  {{- (transform.HighlightCodeBlock .).Wrapped -}}
+</div>
