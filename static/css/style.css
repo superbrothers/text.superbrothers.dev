@@ -241,7 +241,7 @@ code:before, code:after {
 
 pre {
     overflow: auto;
-    padding: 34px 20px 20px;
+    padding: 34px 16px 16px;
     background-color: #272822;
     border-radius: 4px;
     margin: 0;
@@ -295,7 +295,7 @@ img {
 }
 
 @media (max-width: 916px) {
-    .code-block, pre {
+    .code-block {
         margin-left: -16px;
         margin-right: -16px;
     }
