@@ -7,7 +7,7 @@ hasCJKLanguage = true
 # The length of text in words to show in a `.Summary`.
 SummaryLength = 200
 
-googleAnalytics = "UA-10011477-9"
+googleAnalytics = "G-Y1FSBQBZ3Q"
 
 buildFuture = true
 
