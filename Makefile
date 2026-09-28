@@ -1,6 +1,6 @@
 DOCKER_RUN := docker run --rm --init -v $(shell pwd):/src -w /src -u "$(shell id -u):$(shell id -g)"
 # renovate: datasource=github-releases depName=gohugoio/hugo
-HUGO_VERSION ?= 0.166.0
+HUGO_VERSION ?= 0.167.0
 HUGO_IMAGE ?= ghcr.io/gohugoio/hugo:v$(HUGO_VERSION)
 HUGO ?= $(DOCKER_RUN) -e HUGO_ENV -p 8080:8080 $(HUGO_IMAGE) $(HUGO_OPTS)
 
