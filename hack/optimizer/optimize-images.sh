@@ -5,7 +5,7 @@ set -e -o pipefail; [[ -n "$DEBUG" ]] && set -x
 SCRIPT_ROOT="$(cd "$(dirname "$0")"; pwd)"
 TARGET_DIR="${1:-"${SCRIPT_ROOT}/../content"}"
 MAX_WIDTH=1200
-QUALITY=85
+QUALITY=75
 
 echo "Scanning images in ${TARGET_DIR} (max-width: ${MAX_WIDTH}px, format: WebP, quality: ${QUALITY})..."
 
